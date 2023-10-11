@@ -81,7 +81,11 @@ nav
   > .navbar-sidebar
   > .navbar-sidebar__brand
   > .toggle_node_modules-\@docusaurus-theme-classic-lib-theme-ColorModeToggle-styles-module,
-nav > .navbar-sidebar > .navbar-sidebar__brand > .toggleButton_gllP {
+nav
+  > .navbar-sidebar
+  > .navbar-sidebar__brand
+  > .toggle_vylO.margin-right--md
+  > .toggleButton_gllP {
   @apply ml-auto;
 }
 nav
