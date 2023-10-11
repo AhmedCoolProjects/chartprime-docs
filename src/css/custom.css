@@ -10,7 +10,8 @@
 
 /* NAVBAR */
 
-nav.navbar {
+nav.navbar,
+nav > .navbar-sidebar > .navbar-sidebar__brand {
   background-image: linear-gradient(#000000, rgba(255, 255, 255, 0)),
     linear-gradient(138deg, #530481, rgba(255, 255, 255, 0)),
     linear-gradient(
@@ -21,9 +22,13 @@ nav.navbar {
   @apply bg-black;
 }
 
+nav > .navbar__inner > .navbar__items > .navbar__brand {
+  @apply lg:relative absolute lg:transform-none lg:left-auto transform -translate-x-1/2 left-1/2;
+}
+
 .navbar__inner > .navbar__items > .navbar__item.navbar__link,
 .navbar__item.dropdown > .navbar__link {
-  @apply text-white whitespace-nowrap hover:text-[var(--ifm-navbar-link-hover-color)]  relative lg:mx-1;
+  @apply text-white lg:flex hidden whitespace-nowrap hover:text-[var(--ifm-navbar-link-hover-color)]  relative lg:mx-1;
 }
 .navbar__inner > .navbar__items > .navbar__item.navbar__link::after {
   @apply content-[""] absolute -bottom-[14px] left-0 w-full h-0 transition-all duration-300 ease-in-out;
@@ -50,7 +55,7 @@ nav.navbar {
 
 /* DOC SEARCH BUTTON */
 .DocSearch.DocSearch-Button {
-  @apply w-44 rounded-xl;
+  @apply w-fit md:w-44 rounded-xl;
   box-shadow: inset 0 0 0 1px var(--ifm-color-primary);
 }
 .DocSearch-Button-Keys {
@@ -58,11 +63,44 @@ nav.navbar {
 }
 
 /* THEME BUTTON */
-div > button.clean-btn > svg {
+.toggleButton_node_modules-\@docusaurus-theme-classic-lib-theme-ColorModeToggle-styles-module
+  > svg {
   @apply text-gray-300;
 }
-div > button.clean-btn:hover {
+.toggleButton_node_modules-\@docusaurus-theme-classic-lib-theme-ColorModeToggle-styles-module:hover {
   background: #444950 !important;
+}
+
+/* SIDEBAR LIST */
+.clean-btn.navbar-sidebar__close {
+  @apply text-white ml-0;
+}
+nav
+  > .navbar-sidebar
+  > .navbar-sidebar__brand
+  > .toggle_node_modules-\@docusaurus-theme-classic-lib-theme-ColorModeToggle-styles-module {
+  @apply ml-auto;
+}
+nav
+  > .navbar-sidebar
+  > .navbar-sidebar__brand
+  > .navbar-sidebar__item.menu
+  > ul.menu__list {
+  @apply space-y-2;
+}
+.navbar-sidebar__item.menu > ul.menu__list > li.menu__list-item > a {
+  @apply py-3;
+}
+.navbar-sidebar__item.menu > ul.menu__list > li.menu__list-item > a > svg {
+  @apply hidden;
+}
+.navbar-sidebar__item.menu > ul.menu__list > li.menu__list-item > a:hover {
+  @apply bg-[var(--ifm-color-primary)] text-white;
+}
+
+/* SIDEBAR TOGGLE */
+.navbar__toggle.clean-btn {
+  @apply text-white;
 }
 
 /* You can override the default Infima variables here. */
