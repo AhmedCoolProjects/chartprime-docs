@@ -103,6 +103,14 @@ nav
   @apply text-white;
 }
 
+/* FOOTER */
+.footer__item > a {
+  @apply flex flex-row space-x-1 items-center whitespace-nowrap;
+}
+footer.footer.footer--dark {
+  @apply bg-[#1C1E21];
+}
+
 /* You can override the default Infima variables here. */
 :root {
   --ifm-color-primary: #b739fe;

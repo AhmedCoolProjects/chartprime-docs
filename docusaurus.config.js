@@ -127,13 +127,46 @@ const config = {
       },
       footer: {
         style: "dark",
+
+        logo: {
+          src: "/logo.png",
+          alt: "ChartPrime Logo",
+          style: {
+            width: "200px",
+            objectFit: "contain",
+          },
+        },
         links: [
           {
             title: "Docs",
             items: [
               {
-                label: "Tutorial",
-                to: "/docs/intro",
+                label: "Get Started",
+                to: "/",
+              },
+              {
+                label: "Premium Toolkits",
+                to: "/",
+              },
+              {
+                label: "Market Oracle",
+                to: "/",
+              },
+              {
+                label: "ChartPrime Oscillators",
+                to: "/",
+              },
+              {
+                label: "Market Dynamics Pro",
+                to: "/",
+              },
+              {
+                label: "Advanced Techniques",
+                to: "/",
+              },
+              {
+                label: "FAQs",
+                to: "/",
               },
             ],
           },
@@ -141,16 +174,29 @@ const config = {
             title: "Community",
             items: [
               {
-                label: "Stack Overflow",
-                href: "https://stackoverflow.com/questions/tagged/docusaurus",
+                label: "TradingView",
+                href: "https://www.tradingview.com/u/ChartPrime/#published-scripts",
+              },
+              {
+                label: "Youtube",
+                href: "https://www.youtube.com/ChartPrime",
               },
               {
                 label: "Discord",
-                href: "https://discordapp.com/invite/docusaurus",
+                href: "https://discord.gg/chartprime",
               },
               {
-                label: "Twitter",
-                href: "https://twitter.com/docusaurus",
+                label: "X",
+                href: "https://twitter.com/ChartPrime",
+              },
+
+              {
+                label: "Facebook",
+                href: "https://chartprime.com/#",
+              },
+              {
+                label: "TikTok",
+                href: "https://www.tiktok.com/@chartprimetrading",
               },
             ],
           },
@@ -162,13 +208,21 @@ const config = {
                 to: "/blog",
               },
               {
-                label: "GitHub",
-                href: "https://github.com/facebook/docusaurus",
+                label: "Testimonials",
+                href: "https://chartprime.com/testimonials",
+              },
+              {
+                label: "Register",
+                href: "https://chartprime.com/#register",
+              },
+              {
+                label: "Cookie Policy",
+                href: "https://chartprime.com/cookie-policy",
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} ChartPrime, Inc.`,
       },
       prism: {
         theme: lightCodeTheme,
