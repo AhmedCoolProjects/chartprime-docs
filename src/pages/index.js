@@ -31,8 +31,8 @@ export default function Home() {
   const { siteConfig } = useDocusaurusContext();
   return (
     <Layout
-      title={`Hello from ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />">
+      title={`Welcome`}
+      description="ChartPrime offers a toolkit that will take your trading game to the next level. Trend Signals, Institutional order blocks, Pattern detection, Reversal signals,  Powerful oscillators,  amongst many other game changing features.">
       <MainHomepage />
     </Layout>
   );

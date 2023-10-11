@@ -6,8 +6,8 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: "My Site",
-  tagline: "Dinosaurs are cool",
+  title: "ChartPrime Docs",
+  tagline: "",
   favicon: "img/favicon.ico",
 
   // Set the production url of your site here
@@ -77,23 +77,50 @@ const config = {
     ({
       // Replace with your project's social card
       image: "img/docusaurus-social-card.jpg",
+      algolia: {
+        appId: "app-id",
+        apiKey: "search-only-api-key",
+        indexName: "index-name",
+      },
       navbar: {
         title: "",
         logo: {
           alt: "ChartPrime Logo",
           src: "/logo.png",
+          style: {
+            width: "150px",
+            objectFit: "contain",
+          },
         },
         items: [
           {
-            type: "docSidebar",
-            sidebarId: "tutorialSidebar",
+            label: "Our Website",
+            href: "https://chartprime.com",
             position: "left",
-            label: "Tutorial",
           },
-          { to: "/blog", label: "Blog", position: "left" },
           {
-            href: "https://github.com/facebook/docusaurus",
-            label: "GitHub",
+            label: "Sign Up",
+            href: "https://chartprime.com",
+            position: "left",
+          },
+          {
+            label: "TradingView",
+            href: "https://chartprime.com",
+            position: "left",
+          },
+          {
+            label: "Discord",
+            href: "https://chartprime.com",
+            position: "left",
+          },
+          // language
+          {
+            type: "localeDropdown",
+            position: "right",
+          },
+          // algolia search
+          {
+            type: "search",
             position: "right",
           },
         ],

@@ -28,8 +28,7 @@ const DATA = [
   {
     title: "ChartPrime Oscillators Toolkit",
     icon: "oscillator.webp",
-    description:
-      " Enhance momentum trading with two oscillator modes for early shift detection and added confluence.",
+    description: "Enhance momentum trading with two oscillator modes.",
     link: "",
   },
   {
@@ -43,7 +42,7 @@ const DATA = [
     title: "Advanced Techniques",
     icon: "advanced.webp",
     description:
-      "Unlock advanced signals and over 20 other top-rated indicators based on community input.",
+      "Unlock advanced signals and over 20 other top-rated indicators.",
     link: "",
   },
 ];
@@ -51,17 +50,26 @@ const DATA = [
 function MainHomepage() {
   return (
     <main className="flex flex-col pb-16 items-center">
-      <div className="grid gap-8 mt-16 mb-8 grid-cols-1 w-2/3 md:grid-cols-2">
+      <div className="grid gap-8 mt-16 sm:w-9/12 lg:mb-8 grid-cols-1 w-11/12 md:w-5/6 lg:w-5/6 md:grid-cols-2 lg:grid-cols-3">
         {DATA.map((item) => (
           <CardItem key={item.title} {...item} />
         ))}
+        <div className="hidden lg:flex"></div>
+        <CardItem
+          title="FAQs"
+          icon="faq.webp"
+          description="Get answers to frequently asked questions."
+          link="/"
+          className="flex md:hidden lg:flex flex-col col-start-3"
+        />
       </div>
+
       <CardItem
         title="FAQs"
         icon="faq.webp"
         description="Get answers to frequently asked questions."
         link="/"
-        className="w-[calc(33vw_-_1rem)]"
+        className="mx-4 lg:hidden md:flex flex-col hidden  md:w-[calc(37.5vw_-_1rem)]"
       />
     </main>
   );
@@ -79,8 +87,8 @@ function CardItem({ title, icon, description, link, className = "" }) {
       to={link}>
       <div
         className={clsx(
-          "p-9 cursor-pointer rounded-2xl border border-gray-300",
-          "shadow-lg hover:shadow-xl transition-shadow duration-300 ease-in-out",
+          "p-9 h-full cursor-pointer rounded-2xl border border-gray-300",
+          "shadow-md hover:shadow-lg transition-shadow duration-300 ease-in-out  hover:shadow-purple-800 ",
           className,
           // animation for border on hover
           "hover:border-[#B739FE] transition-colors duration-300 ease-in-out"
@@ -88,7 +96,7 @@ function CardItem({ title, icon, description, link, className = "" }) {
         <div className="flex  mb-4 flex-row items-center ">
           <img
             src={`/img/${icon}`}
-            className="h-10  object-contain mr-3"
+            className="lg:h-8 h-5  object-contain mr-3"
             alt={icon}
           />
           <h1 className="font-bold text-[#B739FE] text-xl">{title}</h1>

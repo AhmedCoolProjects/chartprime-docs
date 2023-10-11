@@ -11,33 +11,81 @@
 /* NAVBAR */
 
 nav.navbar {
-  background-image: linear-gradient(#000, rgba(255, 255, 255, 0)),
-    linear-gradient(138deg, #25003a, rgba(255, 255, 255, 0)),
-    linear-gradient(177deg, rgba(0, 174, 255, 0.28) 15%, rgba(255, 255, 255, 0));
+  background-image: linear-gradient(#000000, rgba(255, 255, 255, 0)),
+    linear-gradient(138deg, #530481, rgba(255, 255, 255, 0)),
+    linear-gradient(
+      177deg,
+      rgba(109, 103, 114, 0.28) 15%,
+      rgba(255, 255, 255, 0)
+    );
   @apply bg-black;
+}
+
+.navbar__inner > .navbar__items > .navbar__item.navbar__link,
+.navbar__item.dropdown > .navbar__link {
+  @apply text-white whitespace-nowrap hover:text-[var(--ifm-navbar-link-hover-color)]  relative lg:mx-1;
+}
+.navbar__inner > .navbar__items > .navbar__item.navbar__link::after {
+  @apply content-[""] absolute -bottom-[14px] left-0 w-full h-0 transition-all duration-300 ease-in-out;
+  /* make a gradiant background from bottom from #B739FE to transparent dark  */
+  background-image: linear-gradient(to top, #b639fed7, rgba(0, 0, 0, 0));
+}
+
+.navbar__inner > .navbar__items > .navbar__item.navbar__link:hover::after {
+  @apply h-3;
+}
+
+.navbar__link {
+  @apply flex flex-row items-center;
+}
+.navbar__item.navbar__link > svg {
+  @apply hidden;
+}
+.navbar__item.dropdown > .navbar__link > svg {
+  @apply mt-1;
+}
+.navbar__item.dropdown > .navbar__link::after {
+  @apply mt-2 ml-2;
+}
+
+/* DOC SEARCH BUTTON */
+.DocSearch.DocSearch-Button {
+  @apply w-44 rounded-xl;
+  box-shadow: inset 0 0 0 1px var(--ifm-color-primary);
+}
+.DocSearch-Button-Keys {
+  @apply !hidden;
+}
+
+/* THEME BUTTON */
+div > button.clean-btn > svg {
+  @apply text-gray-300;
+}
+div > button.clean-btn:hover {
+  background: #444950 !important;
 }
 
 /* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #2e8555;
-  --ifm-color-primary-dark: #29784c;
-  --ifm-color-primary-darker: #277148;
-  --ifm-color-primary-darkest: #205d3b;
-  --ifm-color-primary-light: #33925d;
-  --ifm-color-primary-lighter: #359962;
-  --ifm-color-primary-lightest: #3cad6e;
+  --ifm-color-primary: #b739fe;
+  --ifm-color-primary-dark: #ac1afe;
+  --ifm-color-primary-darker: #a60bfe;
+  --ifm-color-primary-darkest: #8b01d9;
+  --ifm-color-primary-light: #c258fe;
+  --ifm-color-primary-lighter: #c867fe;
+  --ifm-color-primary-lightest: #d996fe;
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme="dark"] {
-  --ifm-color-primary: #25c2a0;
-  --ifm-color-primary-dark: #21af90;
-  --ifm-color-primary-darker: #1fa588;
-  --ifm-color-primary-darkest: #1a8870;
-  --ifm-color-primary-light: #29d5b0;
-  --ifm-color-primary-lighter: #32d8b4;
-  --ifm-color-primary-lightest: #4fddbf;
+  --ifm-color-primary: #b739fe;
+  --ifm-color-primary-dark: #ac1afe;
+  --ifm-color-primary-darker: #a60bfe;
+  --ifm-color-primary-darkest: #8b01d9;
+  --ifm-color-primary-light: #c258fe;
+  --ifm-color-primary-lighter: #c867fe;
+  --ifm-color-primary-lightest: #d996fe;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
