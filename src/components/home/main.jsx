@@ -87,7 +87,7 @@ function CardItem({ title, icon, description, link, className = "" }) {
       to={link}>
       <div
         className={clsx(
-          "p-9 h-full cursor-pointer rounded-2xl border border-gray-300",
+          "p-5 md:p-9 h-full cursor-pointer rounded-2xl border border-gray-300",
           "shadow-md hover:shadow-lg transition-shadow duration-300 ease-in-out  hover:shadow-purple-800 ",
           className,
           // animation for border on hover
@@ -96,10 +96,12 @@ function CardItem({ title, icon, description, link, className = "" }) {
         <div className="flex  mb-4 flex-row items-center ">
           <img
             src={`/img/${icon}`}
-            className="lg:h-8 h-5  object-contain mr-3"
+            className="lg:h-6 h-5  object-contain mr-3"
             alt={icon}
           />
-          <h1 className="font-bold text-[#B739FE] text-xl">{title}</h1>
+          <h1 className="font-bold md:whitespace-normal whitespace-nowrap text-[#B739FE] text-xl">
+            {title}
+          </h1>
         </div>
         <p>{description}</p>
       </div>
