@@ -64,10 +64,12 @@ nav > .navbar__inner > .navbar__items > .navbar__brand {
 
 /* THEME BUTTON */
 .toggleButton_node_modules-\@docusaurus-theme-classic-lib-theme-ColorModeToggle-styles-module
-  > svg {
+  > svg,
+.toggleButton_gllP > svg {
   @apply text-gray-300;
 }
-.toggleButton_node_modules-\@docusaurus-theme-classic-lib-theme-ColorModeToggle-styles-module:hover {
+.toggleButton_node_modules-\@docusaurus-theme-classic-lib-theme-ColorModeToggle-styles-module:hover,
+.toggleButton_gllP:hover {
   background: #444950 !important;
 }
 
@@ -78,7 +80,8 @@ nav > .navbar__inner > .navbar__items > .navbar__brand {
 nav
   > .navbar-sidebar
   > .navbar-sidebar__brand
-  > .toggle_node_modules-\@docusaurus-theme-classic-lib-theme-ColorModeToggle-styles-module {
+  > .toggle_node_modules-\@docusaurus-theme-classic-lib-theme-ColorModeToggle-styles-module,
+nav > .navbar-sidebar > .navbar-sidebar__brand > .toggleButton_gllP {
   @apply ml-auto;
 }
 nav
