@@ -114,6 +114,31 @@ footer.footer.footer--dark {
   @apply bg-[#1C1E21];
 }
 
+/* BREADCRUMBS */
+nav > ul.breadcrumbs,
+nav > ul.breadcrumbs > li {
+  @apply flex flex-row h-full items-center;
+}
+
+nav > ul.breadcrumbs > li:nth-child(1) > a > svg {
+  @apply mb-1;
+}
+.breadcrumbs__item.breadcrumbs__item--active {
+  @apply font-semibold;
+}
+article > div.theme-doc-markdown.markdown > header > h1 {
+  @apply text-3xl font-bold;
+}
+
+/* MARKDOWN */
+main > div > div > header > h1 {
+  @apply text-3xl font-bold;
+}
+
+.container > div > article > section > article > a > p {
+  @apply hidden;
+}
+
 /* You can override the default Infima variables here. */
 :root {
   --ifm-color-primary: #b739fe;

@@ -8,14 +8,14 @@ const DATA = [
     icon: "launch.webp",
     description:
       "Learn about ChartPrime and the various platforms we are compatible with.",
-    link: "",
+    link: "/docs/category/getting-started",
   },
   {
     title: "Premium Toolkits Overview",
     icon: "overview.webp",
     description:
       "Comprehensive guides and details regarding our tools and features.",
-    link: "",
+    link: "/docs/category/premium-toolkits-overview",
   },
 
   {
@@ -23,27 +23,27 @@ const DATA = [
     icon: "trading.webp",
     description:
       "Innovative tools for early trend signals and chart simplification.",
-    link: "",
+    link: "/docs/category/market-oracle-toolkit",
   },
   {
     title: "ChartPrime Oscillators Toolkit",
     icon: "oscillator.webp",
     description: "Enhance momentum trading with two oscillator modes.",
-    link: "",
+    link: "/docs/category/chartprime-oscillators-toolkit",
   },
   {
     title: "Market Dynamics Pro Toolkit",
     icon: "picker.webp",
     description:
       "Streamlined indicators for pinpointing key market levels and patterns.",
-    link: "",
+    link: "/docs/category/market-dynamics-pro-toolkit",
   },
   {
     title: "Advanced Techniques",
     icon: "advanced.webp",
     description:
       "Unlock advanced signals and over 20 other top-rated indicators.",
-    link: "",
+    link: "/docs/category/advanced-techniques",
   },
 ];
 
