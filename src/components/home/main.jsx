@@ -10,13 +10,6 @@ const DATA = [
       "Learn about ChartPrime and the various platforms we are compatible with.",
     link: "/docs/category/getting-started",
   },
-  {
-    title: "Premium Toolkits Overview",
-    icon: "overview.webp",
-    description:
-      "Comprehensive guides and details regarding our tools and features.",
-    link: "/docs/category/premium-toolkits-overview",
-  },
 
   {
     title: "Market Oracle Toolkit",
@@ -45,6 +38,12 @@ const DATA = [
       "Unlock advanced signals and over 20 other top-rated indicators.",
     link: "/docs/category/advanced-techniques",
   },
+  {
+    title: "FAQs",
+    icon: "faq.webp",
+    description: "Get answers to frequently asked questions.",
+    link: "/docs/category/frequently-asked-questions-faq",
+  },
 ];
 
 function MainHomepage() {
@@ -54,23 +53,7 @@ function MainHomepage() {
         {DATA.map((item) => (
           <CardItem key={item.title} {...item} />
         ))}
-        <div className="hidden lg:flex"></div>
-        <CardItem
-          title="FAQs"
-          icon="faq.webp"
-          description="Get answers to frequently asked questions."
-          link="/"
-          className="flex md:hidden lg:flex flex-col col-start-3"
-        />
       </div>
-
-      <CardItem
-        title="FAQs"
-        icon="faq.webp"
-        description="Get answers to frequently asked questions."
-        link="/"
-        className="mx-4 lg:hidden md:flex flex-col hidden  md:w-[calc(37.5vw_-_1rem)]"
-      />
     </main>
   );
 }

@@ -12,13 +12,13 @@
 
 nav.navbar,
 nav > .navbar-sidebar > .navbar-sidebar__brand {
-  background-image: linear-gradient(#000000, rgba(255, 255, 255, 0)),
+  /* background-image: linear-gradient(#000000, rgba(255, 255, 255, 0)),
     linear-gradient(138deg, #530481, rgba(255, 255, 255, 0)),
     linear-gradient(
       177deg,
       rgba(109, 103, 114, 0.28) 15%,
       rgba(255, 255, 255, 0)
-    );
+    ); */
   @apply bg-black;
 }
 
@@ -137,6 +137,16 @@ main > div > div > header > h1 {
 
 .container > div > article > section > article > a > p {
   @apply hidden;
+}
+
+/* SIDEBAR */
+
+div > nav.menu.thin-scrollbar > ul > li.menu__list-item {
+  @apply my-3;
+}
+
+div > nav.menu.thin-scrollbar > ul > li.menu__list-item > div > a {
+  @apply text-base;
 }
 
 /* You can override the default Infima variables here. */
