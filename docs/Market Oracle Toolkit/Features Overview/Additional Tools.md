@@ -1,5 +1,6 @@
 ---
 sidebar_position: 8
+slug: /market-oracle-toolkit/features-overview/additional-tools
 ---
 
 Dynamic Reactor

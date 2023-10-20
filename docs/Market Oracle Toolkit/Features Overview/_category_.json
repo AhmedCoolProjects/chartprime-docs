@@ -1,4 +1,7 @@
 {
   "label": "Features Overview",
-  "position": 2
+  "position": 2,
+  "link": {
+    "slug": "market-oracle-toolkit"
+  }
 }
