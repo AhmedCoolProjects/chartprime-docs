@@ -7,6 +7,9 @@ module.exports = {
       display: ["hover", "group-hover", "focus"],
     },
   },
+  corePlugins: {
+    preflight: false,
+  },
   theme: {
     extend: {},
   },

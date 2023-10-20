@@ -1,8 +1,4 @@
 {
   "label": "Features Overview",
-  "position": 2,
-  "link": {
-    "type": "generated-index",
-    "description": "desc"
-  }
+  "position": 2
 }
