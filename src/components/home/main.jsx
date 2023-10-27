@@ -29,7 +29,7 @@ const DATA = [
     icon: "picker.webp",
     description:
       "Streamlined indicators for pinpointing key market levels and patterns.",
-    link: "/docs/category/market-dynamics-pro-toolkit",
+    link: "/docs/market-dynamics-pro-toolkit/features-overview/order-blocks",
   },
   {
     title: "Advanced Techniques",
