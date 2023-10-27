@@ -1,6 +1,6 @@
 ---
-title: "Feature 4: Candle highlighting"
-sidebar_position: 4
+title: "Candle highlighting"
+sidebar_position: 5
 ---
 
 In order to help a trader visualize trends more clearly; we provide two main unique candle colouring techniques. The first being Trend Gradient.

@@ -1,6 +1,6 @@
 ---
 sidebar_position: 1
-slug: /category/market-oracle-toolkit
+slug: /market-oracle-toolkit/features-overview
 ---
 
 :::tip ChartPrime Oracle Pro

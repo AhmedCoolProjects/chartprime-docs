@@ -16,7 +16,7 @@ const DATA = [
     icon: "trading.webp",
     description:
       "Innovative tools for early trend signals and chart simplification.",
-    link: "/docs/category/market-oracle-toolkit",
+    link: "/docs/market-oracle-toolkit/features-overview",
   },
   {
     title: "ChartPrime Oscillators Toolkit",

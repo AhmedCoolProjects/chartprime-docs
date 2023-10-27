@@ -1,6 +1,6 @@
 ---
-title: "Feature 3: Optimising your signals"
-sidebar_position: 3
+title: "Optimising your signals"
+sidebar_position: 4
 ---
 
 Signals optimisation and finding the best settings with ChartPrime’s signals is made easy via the Optimal Settings in the dashboard. This is found in the lower right corner of your screen.

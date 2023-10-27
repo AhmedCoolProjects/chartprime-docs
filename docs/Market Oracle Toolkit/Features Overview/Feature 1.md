@@ -1,6 +1,6 @@
 ---
-title: "Feature 1: Trend Signals"
-sidebar_position: 1
+title: "Trend Signals"
+sidebar_position: 2
 ---
 
 Our trend signals are one of the most iconic ChartPrime features. These are adaptable and low lag signals that analyse market trends and give simple buy, sell or strong indications on candles.

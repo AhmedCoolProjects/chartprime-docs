@@ -1,6 +1,6 @@
 ---
-title: "Feature 2: Reversal Signals"
-sidebar_position: 2
+title: "Reversal Signals"
+sidebar_position: 3
 ---
 
 The reversal signals found in ChartPrime take a contrarian approach to signal generation. Rather than going with the trend; they attempt to predict reversals. If enabled with trend signals they will appear blue as to reduce confusion.
