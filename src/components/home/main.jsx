@@ -22,7 +22,7 @@ const DATA = [
     title: "ChartPrime Oscillators Toolkit",
     icon: "oscillator.webp",
     description: "Enhance momentum trading with two oscillator modes.",
-    link: "/docs/category/chartprime-oscillators-toolkit",
+    link: "/docs/chartprime-oscillators-toolkit/features-overview/introduction",
   },
   {
     title: "Market Dynamics Pro Toolkit",

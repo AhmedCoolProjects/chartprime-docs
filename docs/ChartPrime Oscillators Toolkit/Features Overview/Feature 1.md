@@ -1,6 +1,6 @@
 ---
-title: "Feature 1: Trend fusion Oscillator"
-sidebar_position: 1
+title: "Trend fusion Oscillator"
+sidebar_position: 2
 ---
 
 One of ChartPrime’s most iconic oscillators; this oscillator uses an amalgamation of **price** and **volume** to give market participants useful insight into possible future price action. It is designed in the format of a classical oscillator to be recogniseable and have a **easy learning curve**.

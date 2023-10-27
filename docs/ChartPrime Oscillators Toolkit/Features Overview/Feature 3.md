@@ -1,6 +1,6 @@
 ---
-sidebar_position: 3
-title: "Feature 3: MVP Oscillator"
+sidebar_position: 4
+title: "MVP Oscillator"
 ---
 
 This brand new oscillator analyses market volatility and produces a blue and purple ribbon.

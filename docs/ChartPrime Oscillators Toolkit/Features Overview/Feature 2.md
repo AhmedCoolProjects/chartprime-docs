@@ -1,6 +1,6 @@
 ---
-title: "Feature 2: Prime Oscillator"
-sidebar_position: 2
+title: "Prime Oscillator"
+sidebar_position: 3
 ---
 
 This oscillator consists of a main ribbon where red indicates a downtrend and green indicates an uptrend. These are various other features of this oscillator including the following:
