@@ -5,43 +5,45 @@ import React from "react";
 const DATA = [
   {
     title: "Mobile App",
-    icon: "launch.webp",
+    icon: "cellphone-electronics-handphone-svgrepo-com.svg",
     description:
-      "Get the most out of your toolkit with our mobile app. Available on iOS and Android.",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit.",
     link: "/mobile-app",
   },
 
   {
     title: "Web App",
-    icon: "trading.webp",
+    icon: "laptop-minimalistic-svgrepo-com.svg",
     description:
-      "Innovative tools for early trend signals and chart simplification.",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit.",
     link: "/web-app",
   },
   {
     title: "Packages & Subscriptions",
-    icon: "oscillator.webp",
-    description: "Enhance momentum trading with two oscillator modes.",
+    icon: "package-svgrepo-com.svg",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit.",
     link: "/packages-subscriptions",
   },
   {
     title: "Troubleshooting and FAQs",
-    icon: "picker.webp",
+    icon: "faq-svgrepo-com.svg",
     description:
-      "Streamlined indicators for pinpointing key market levels and patterns.",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit.",
     link: "/troubleshooting-faqs",
   },
   {
     title: "Contact & Support",
-    icon: "advanced.webp",
+    icon: "support-help-headset-svgrepo-com.svg",
     description:
-      "Unlock advanced signals and over 20 other top-rated indicators.",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit.",
     link: "/contact-support",
   },
   {
     title: "Glossary",
-    icon: "faq.webp",
-    description: "Get answers to frequently asked questions.",
+    icon: "glossary-svgrepo-com.svg",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit.",
     link: "/glossary",
   },
 ];
@@ -76,12 +78,12 @@ function CardItem({ title, icon, description, link, className = "" }) {
           // animation for border on hover
           "hover:border-[#627DBE] transition-colors duration-300 ease-in-out"
         )}>
-        <div className="flex  mb-4 flex-row items-center ">
-          <img
-            src={`/img/${icon}`}
-            className="lg:h-6 h-5  object-contain mr-3"
-            alt={icon}
-          />
+        <img
+          src={`/img/${icon}`}
+          className="lg:h-8 h-5 object-contain"
+          alt={icon}
+        />
+        <div className="flex  flex-row items-center ">
           <h1 className="font-bold md:whitespace-normal whitespace-nowrap text-[#627DBE] text-xl">
             {title}
           </h1>

@@ -106,8 +106,9 @@ nav > .navbar__inner > .navbar__items > .navbar__brand {
 }
 
 /* SIDEBAR LIST */
-.clean-btn.navbar-sidebar__close {
-  @apply text-white ml-0;
+
+button.clean-btn.navbar-sidebar__close > svg > g {
+  @apply !text-white !stroke-white;
 }
 nav
   > .navbar-sidebar
