@@ -223,36 +223,32 @@ const config = {
             title: "Docs",
             items: [
               {
-                label: "Introduction",
-                to: "/docs/category/introduction",
+                label: "Mobile App",
+                to: "/mobile-app",
               },
               {
-                label: "Get Started",
-                to: "/docs/category/getting-started",
+                label: "Web App",
+                to: "/web-app",
               },
               {
-                label: "Premium Toolkits",
-                to: "/docs/category/premium-toolkits-overview",
-              },
-              {
-                label: "Market Oracle",
-                to: "/docs/category/market-oracle-toolkit",
-              },
-              {
-                label: "SessionTracker Oscillators",
-                to: "/docs/category/SessionTracker-oscillators-toolkit",
-              },
-              {
-                label: "Market Dynamics Pro",
-                to: "/docs/category/market-dynamics-pro-toolkit",
-              },
-              {
-                label: "Advanced Techniques",
-                to: "/docs/category/advanced-techniques",
+                label: "Packages and Subscriptions",
+                to: "/packages-subscriptions",
               },
               {
                 label: "FAQs",
-                to: "/docs/category/frequently-asked-questions-faq",
+                to: "/troubleshooting-faqs",
+              },
+              {
+                label: "Contact and Support",
+                to: "/contact-support",
+              },
+              {
+                label: "Glossary",
+                to: "/glossary",
+              },
+              {
+                label: "Conclusion",
+                to: "/conclusion",
               },
             ],
           },
@@ -290,20 +286,20 @@ const config = {
             title: "More",
             items: [
               {
-                label: "Blog",
-                to: "/blog",
+                label: "Our Website",
+                href: "https://mysessiontracker.com/",
               },
               {
-                label: "Testimonials",
-                href: "https://SessionTracker.com/testimonials",
+                label: "Terms of Service",
+                href: "https://mysessiontracker.com/terms",
               },
               {
-                label: "Register",
-                href: "https://SessionTracker.com/#register",
+                label: "Privacy Policy",
+                href: "https://mysessiontracker.com/privacy",
               },
               {
-                label: "Cookie Policy",
-                href: "https://SessionTracker.com/cookie-policy",
+                label: "Support Center",
+                href: "mailto:support@mysessiontracker.com",
               },
               {
                 html: `<div class="global_row__hlXlI" style="margin-top:14px"><a href="https://itunes.apple.com/us/app/my-session-tracker/id1444380642?ls=1&amp;mt=8" target="_blank" rel="noopener noreferrer" class="styles_appleA__a_a_F"><div class="styles_appleLink__0Wpoy" style="width:130px;height:42px;position:relative"><img class="global_image__hXmTb" style="object-fit:contain" srcset="/images/apple-link@1x.png, /images/apple-link@2x.png 2x" src="/images/apple-link@2x.png" alt="Download via App Store"></div></a><a href="https://play.google.com/store/apps/details?id=com.listenfirstlabs.sessiontrackerandroid" target="_blank" rel="noopener noreferrer" style="margin-left:10px"><div class="styles_googleLink__86Mfh" style="width:126px;height:42px;position:relative"><img class="global_image__hXmTb" style="object-fit:contain" srcset="/images/google-link@1x.png, /images/google-link@2x.png 2x" src="/images/google-link@2x.png" alt="Download via Google Play"></div></a></div>`,
@@ -311,7 +307,8 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} SessionTracker, Inc.`,
+        copyright:
+          "Copyright © 2023 Listen First Labs LLC. All rights reserved.",
       },
       prism: {
         theme: lightCodeTheme,
