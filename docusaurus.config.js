@@ -1,6 +1,4 @@
 // @ts-check
-// Note: type annotations allow type checking and IDEs autocompletion
-
 const lightCodeTheme = require("prism-react-renderer/themes/github");
 const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 
@@ -83,31 +81,16 @@ const config = {
   title: "SessionTracker Docs",
   tagline: "",
   favicon: "img/favicon.ico",
-
-  // deactivate dark mode
-
-  // Set the production url of your site here
-  url: "https://SessionTracker.com",
-  // Set the /<baseUrl>/ pathname under which your site is served
-  // For GitHub pages deployment, it is often '/<projectName>/'
+  url: "https://mysessiontracker.com/",
   baseUrl: "/",
-
-  // GitHub pages deployment config.
-  // If you aren't using GitHub pages, you don't need these.
   organizationName: "SessionTracker", // Usually your GitHub org/user name.
   projectName: "SessionTracker-docs", // Usually your repo name.
-
   onBrokenLinks: "ignore",
   onBrokenMarkdownLinks: "ignore",
-
-  // Even if you don't use internalization, you can use this field to set useful
-  // metadata like html lang. For example, if your site is Chinese, you may want
-  // to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: "en",
     locales: ["en"],
   },
-
   presets: [
     [
       "classic",
@@ -252,36 +235,7 @@ const config = {
               },
             ],
           },
-          {
-            title: "Community",
-            items: [
-              {
-                label: "TradingView",
-                href: "https://www.tradingview.com/u/SessionTracker/#published-scripts",
-              },
-              {
-                label: "Youtube",
-                href: "https://www.youtube.com/SessionTracker",
-              },
-              {
-                label: "Discord",
-                href: "https://discord.gg/SessionTracker",
-              },
-              {
-                label: "X",
-                href: "https://twitter.com/SessionTracker",
-              },
 
-              {
-                label: "Facebook",
-                href: "https://SessionTracker.com/#",
-              },
-              {
-                label: "TikTok",
-                href: "https://www.tiktok.com/@SessionTrackertrading",
-              },
-            ],
-          },
           {
             title: "More",
             items: [
