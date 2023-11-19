@@ -8,6 +8,17 @@
 @tailwind components;
 @tailwind base;
 
+/* fonts */
+@import url("https://fonts.googleapis.com/css2?family=Baloo+2:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Baloo+2:wght@700&family=Source+Sans+3:wght@500&display=swap");
+/* body */
+h1 {
+  font-family: "Baloo 2", sans-serif;
+}
+* {
+  font-family: "Source Sans 3", sans-serif;
+}
+
 /* NAVBAR */
 
 nav.navbar,
@@ -19,7 +30,7 @@ nav > .navbar-sidebar > .navbar-sidebar__brand {
       rgba(109, 103, 114, 0.28) 15%,
       rgba(255, 255, 255, 0)
     ); */
-  @apply bg-black;
+  @apply bg-[#8BA7C6];
 }
 
 nav > .navbar__inner > .navbar__items > .navbar__brand {
@@ -28,12 +39,12 @@ nav > .navbar__inner > .navbar__items > .navbar__brand {
 
 .navbar__inner > .navbar__items > .navbar__item.navbar__link,
 .navbar__item.dropdown > .navbar__link {
-  @apply text-white lg:flex hidden whitespace-nowrap hover:text-[var(--ifm-navbar-link-hover-color)]  relative lg:mx-1;
+  @apply text-white lg:flex hidden whitespace-nowrap   relative lg:mx-1;
 }
 .navbar__inner > .navbar__items > .navbar__item.navbar__link::after {
   @apply content-[""] absolute -bottom-[14px] left-0 w-full h-0 transition-all duration-300 ease-in-out;
   /* make a gradiant background from bottom from #B739FE to transparent dark  */
-  background-image: linear-gradient(to top, #b639fed7, rgba(0, 0, 0, 0));
+  background-image: linear-gradient(to top, #6c82b6, rgba(0, 0, 0, 0));
 }
 
 .navbar__inner > .navbar__items > .navbar__item.navbar__link:hover::after {
@@ -53,6 +64,14 @@ nav > .navbar__inner > .navbar__items > .navbar__brand {
   @apply mt-2 ml-2;
 }
 
+/* TITLE */
+.navbar__title.text--truncate {
+  @apply text-white;
+}
+/* LOGO */
+.navbar__logo img {
+  @apply !h-12  !-mt-2 !object-contain;
+}
 /* DOC SEARCH BUTTON */
 .DocSearch.DocSearch-Button {
   @apply w-fit md:w-44 rounded-xl;
@@ -149,15 +168,23 @@ div > nav.menu.thin-scrollbar > ul > li.menu__list-item > div > a {
   @apply text-base;
 }
 
+/* footer */
+.global_row__hlXlI {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
 /* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #b739fe;
-  --ifm-color-primary-dark: #ac1afe;
-  --ifm-color-primary-darker: #a60bfe;
-  --ifm-color-primary-darkest: #8b01d9;
-  --ifm-color-primary-light: #c258fe;
-  --ifm-color-primary-lighter: #c867fe;
-  --ifm-color-primary-lightest: #d996fe;
+  --ifm-color-primary: #627dbe;
+  --ifm-color-primary-dark: #4e6cb6;
+  --ifm-color-primary-darker: #4865ad;
+  --ifm-color-primary-darkest: #3b548f;
+  --ifm-color-primary-light: #768ec6;
+  --ifm-color-primary-lighter: #8196cb;
+  --ifm-color-primary-lightest: #9fb0d7;
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
 }

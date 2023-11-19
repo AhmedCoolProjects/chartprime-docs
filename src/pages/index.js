@@ -1,38 +1,13 @@
 import React from "react";
-import clsx from "clsx";
-import Link from "@docusaurus/Link";
-import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import Layout from "@theme/Layout";
-import HomepageFeatures from "@site/src/components/HomepageFeatures";
-
-import styles from "./index.module.css";
 import MainHomepage from "../components/home/main";
 
-function HomepageHeader() {
-  const { siteConfig } = useDocusaurusContext();
-  return (
-    <header className={clsx("hero hero--primary", styles.heroBanner)}>
-      <div className="container">
-        <h1 className="hero__title">{siteConfig.title}</h1>
-        <p className="hero__subtitle">{siteConfig.tagline}</p>
-        <div className={styles.buttons}>
-          <Link
-            className="button button--secondary button--lg"
-            to="/docs/intro">
-            Docusaurus Tutorial - 5min ⏱️
-          </Link>
-        </div>
-      </div>
-    </header>
-  );
-}
-
 export default function Home() {
-  const { siteConfig } = useDocusaurusContext();
   return (
     <Layout
       title={`Welcome`}
-      description="ChartPrime offers a toolkit that will take your trading game to the next level. Trend Signals, Institutional order blocks, Pattern detection, Reversal signals,  Powerful oscillators,  amongst many other game changing features.">
+      description="A client management app built for small businesses and side hustles.
+      Focus on your clients, leave the rest to us.">
       <MainHomepage />
     </Layout>
   );

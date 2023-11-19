@@ -4,45 +4,45 @@ import React from "react";
 
 const DATA = [
   {
-    title: "Getting Started",
+    title: "Mobile App",
     icon: "launch.webp",
     description:
-      "Learn about ChartPrime and the various platforms we are compatible with.",
-    link: "/docs/category/getting-started",
+      "Get the most out of your toolkit with our mobile app. Available on iOS and Android.",
+    link: "/mobile-app",
   },
 
   {
-    title: "Market Oracle Toolkit",
+    title: "Web App",
     icon: "trading.webp",
     description:
       "Innovative tools for early trend signals and chart simplification.",
-    link: "/docs/market-oracle-toolkit/features-overview",
+    link: "/web-app",
   },
   {
-    title: "ChartPrime Oscillators Toolkit",
+    title: "Packages & Subscriptions",
     icon: "oscillator.webp",
     description: "Enhance momentum trading with two oscillator modes.",
-    link: "/docs/chartprime-oscillators-toolkit/features-overview/introduction",
+    link: "/packages-subscriptions",
   },
   {
-    title: "Market Dynamics Pro Toolkit",
+    title: "Troubleshooting and FAQs",
     icon: "picker.webp",
     description:
       "Streamlined indicators for pinpointing key market levels and patterns.",
-    link: "/docs/market-dynamics-pro-toolkit/features-overview/order-blocks",
+    link: "/troubleshooting-faqs",
   },
   {
-    title: "Advanced Techniques",
+    title: "Contact & Support",
     icon: "advanced.webp",
     description:
       "Unlock advanced signals and over 20 other top-rated indicators.",
-    link: "/docs/category/advanced-techniques",
+    link: "/contact-support",
   },
   {
-    title: "FAQs",
+    title: "Glossary",
     icon: "faq.webp",
     description: "Get answers to frequently asked questions.",
-    link: "/docs/category/frequently-asked-questions-faq",
+    link: "/glossary",
   },
 ];
 
@@ -70,11 +70,11 @@ function CardItem({ title, icon, description, link, className = "" }) {
       to={link}>
       <div
         className={clsx(
-          "p-5 md:p-9 h-full cursor-pointer rounded-2xl border border-gray-300",
-          "shadow-md hover:shadow-lg transition-shadow duration-300 ease-in-out  hover:shadow-purple-800 ",
+          "p-5 md:p-6 h-full cursor-pointer rounded-2xl border border-gray-300",
+          "shadow-md hover:shadow-lg transition-shadow duration-300 ease-in-out  hover:shadow-[#627DBE] ",
           className,
           // animation for border on hover
-          "hover:border-[#B739FE] transition-colors duration-300 ease-in-out"
+          "hover:border-[#627DBE] transition-colors duration-300 ease-in-out"
         )}>
         <div className="flex  mb-4 flex-row items-center ">
           <img
@@ -82,7 +82,7 @@ function CardItem({ title, icon, description, link, className = "" }) {
             className="lg:h-6 h-5  object-contain mr-3"
             alt={icon}
           />
-          <h1 className="font-bold md:whitespace-normal whitespace-nowrap text-[#B739FE] text-xl">
+          <h1 className="font-bold md:whitespace-normal whitespace-nowrap text-[#627DBE] text-xl">
             {title}
           </h1>
         </div>
